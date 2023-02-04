@@ -92,7 +92,7 @@ class _LocationScreenState extends State<LocationScreen> {
               }, icon: Icon(Icons.location_city,size: 40,),),IconButton(onPressed: () async{
 
                 var weatherdata = await WeatherModel().getLocationWeather();
-                 updateUI(weatherdata);
+                weatherdata == null ? print('error') : updateUI(weatherdata);
 
               }, icon: Icon(Icons.near_me,size: 40)),
             ])
