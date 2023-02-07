@@ -80,7 +80,7 @@ class _LocationScreenState extends State<LocationScreen> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [IconButton(onPressed: ()async{
+              children: [IconButton(tooltip: 'City' ,onPressed: ()async{
                     var named = await Navigator.push(context, MaterialPageRoute(builder: (context){
 
                       return CityScreen();
