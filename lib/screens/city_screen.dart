@@ -49,6 +49,7 @@ class _CityScreenState extends State<CityScreen> {
                     //print(cityName);
                   },
                   controller: locationController,
+                  key: Key('weather_textfield'),
                 ),
               ),
               TextButton(
